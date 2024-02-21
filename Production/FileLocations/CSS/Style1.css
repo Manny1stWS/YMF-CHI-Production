@@ -1,0 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Kanit, Tahoma;
+}
+.container {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100px 4px 160px auto 0px 50px;
+	grid-template-areas: 
+		"l l l l l l n n v v b b"
+		"t t t t t t t t t t t t"
+		"h h h h h h h h h h h h"
+		"m m m m m m m m m m m m"
+		"c c c c c c c c c c c c"
+		"p p p p p p p p p p p p";
+}
+body div div a {
+	text-decoration: none;
+}
+body div p a {
+	color: grey;
+}
+body div ol {
+	margin-left: 60px;
+	margin-bottom: 10px;
+	line-height: 2em;
+}
+body div ol ul {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+body {
+	background-image: url("../../images/CHI.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footer {
+	background-image: url("../../images/CHI.jpg");
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.logo {
+	grid-area: l;
+	grid-row: 1 / 2;
+	color: grey;
+	justify-self: center;
+	align-self: center;
+}
+#CHI {
+	font-size: 3vw;
+	font-weight: 800;
+}
+#CHI a:hover {
+	color: rgb(0 0 120);
+}
+#YMF {
+	font-size: 2vw;
+}
+.navbar1 {
+	grid-area: n;
+	font-size: 2.2vw;
+	font-weight: 600;
+	text-transform: uppercase;
+	justify-self: center;
+	align-self: center;
+}
+.navbar1 a {
+	color: black;
+}
+.navbar1 a:hover {
+	color: rgb(0 0 120);
+}
+.navbar2 {
+	grid-area: v;
+	font-size: 2.2vw;
+	font-weight: 600;
+	text-transform: uppercase;
+	justify-self: center;
+	align-self: center;
+}
+.navbar2 a {
+	color: black;
+}
+.navbar2 a:hover {
+	color: rgb(0 0 120);
+}
+.navbar3 {
+	grid-area: b;
+	font-size: 2.2vw;
+	font-weight: 600;
+	text-transform: uppercase;
+	justify-self: center;
+	align-self: center;
+}
+.navbar3 a {
+	color: black;
+}
+.navbar3 a:hover {
+	color: rgb(0 0 120);
+}
+.header {
+	grid-area: h;
+	text-align: center;
+	background-color: beige;
+	border-top: 4px solid black;
+}
+.main {
+	grid-area: m;
+	background-color: beige;
+	font-size: 18px;
+	border-bottom: 4px solid black;
+}
+.main p {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+.footer {
+	grid-area: p;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer1 {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.footer2 {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.footer3 {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.footer4 {
+	margin-right: 60px;
+	margin-left: 60px;
+}

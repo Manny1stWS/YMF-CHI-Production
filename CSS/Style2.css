@@ -37,7 +37,7 @@ body {
 	text-decoration: none;
 }
 #CHI {
-	font-size: 3vw;
+	font-size: 44px;
 	font-weight: 800;
 	color: grey;
 }
@@ -45,7 +45,7 @@ body {
 	color: rgb(0 0 120);
 }
 #YMF {
-	font-size: 2vw;
+	font-size: 12px;
 }
 .navbar1 {
 	grid-area: n;

@@ -6,7 +6,7 @@
 .container {
 	box-sizing: border-box;
 	width: 100%;
-	height: 100vh;
+	height: 100svh;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 100px auto auto auto 4px 50px;
@@ -72,14 +72,14 @@ table, caption, th, td{
 	align-self: center;
 }
 #CHI {
-	font-size: 3vw;
+	font-size: 44px;
 	font-weight: 800;
 }
 #CHI a:hover {
 	color: rgb(0 0 120);
 }
 #YMF {
-	font-size: 2vw;
+	font-size: 12px;
 }
 .navborder {
 	grid-area: t;

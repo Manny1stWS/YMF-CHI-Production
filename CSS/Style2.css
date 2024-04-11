@@ -9,7 +9,7 @@
 	height: 100svh;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 100px auto auto auto 50px 1px;
+	grid-template-rows: 100px auto auto auto 50px;
 	grid-template-areas:
 		"l l l l l l n n v v b b"
 		"i i i i i i i i i i i i"
@@ -30,7 +30,6 @@ body {
 }
 .logo {
 	grid-area: l;
-	grid-row: 1 / 2;
 	color: grey;
 	justify-self: center;
 	align-self: center;
@@ -49,7 +48,6 @@ body {
 }
 .navbar1 {
 	grid-area: n;
-	grid-row: 1 / 2;
 	font-size: 2.2vw;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -64,7 +62,6 @@ body {
 }
 .navbar2 {
 	grid-area: v;
-	grid-row: 1 / 2;
 	font-size: 2.2vw;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -80,7 +77,6 @@ body {
 }
 .navbar3 {
 	grid-area: b;
-	grid-row: 1 / 2;
 	font-size: 2.2vw;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -95,12 +91,10 @@ body {
 }
 .imagecontainer {
 	grid-area: i;
-	grid-row: 2 / 3;
 	border-top: solid 4px;
 }
 .menu1 {
 	grid-area: m;
-	grid-row: 3 / 4;
 	background-color: black;
 	color: white;
 	font-size: 3.5vw;
@@ -123,7 +117,6 @@ body {
 }
 .menu2 {
 	grid-area: u;
-	grid-row: 4 / 5;
 	background-color: black;
 	color: white;
 	font-size: 3.5vw;
@@ -146,7 +139,6 @@ body {
 }
 .menu3 {
 	grid-area: h;
-	grid-row: 4 / 5;
 	background-color: black;
 	color: white;
 	font-size: 3.5vw;
@@ -169,7 +161,6 @@ body {
 }
 .footer1 {
 	grid-area: f;
-	grid-row: 5 / 6;
 	display: flex;
 	margin-top: 10%;
 	justify-content: center;
@@ -185,7 +176,6 @@ body {
 }
 .footer3 {
 	grid-area: o;
-	grid-row: 5 / 6;
 	display: flex;
 	margin-top: 10%;
 	justify-content: center;
@@ -193,7 +183,6 @@ body {
 }
 .footer4 {
 	grid-area: p;
-	grid-row: 5 / 6;
 	display: flex;
 	margin-top: 10%;
 	justify-content: center;

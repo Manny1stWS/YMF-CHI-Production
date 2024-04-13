@@ -1,0 +1,178 @@
+.tab {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	font-family: Kanit, Tahoma;
+	row-gap: 2px;
+	column-gap: 2px;
+	margin-bottom: 10px;
+}
+
+.tab-1 {
+	margin-bottom: 10px;
+}
+
+#rugType {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#yarnType {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#gSm {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#backType {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#backWeight {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+.packed {
+	width: 30px;
+	display: inline;
+}
+
+#packType {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#casePack {
+	margin-bottom: 10px;
+	width: 50px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+.percentages {
+	margin-bottom: 10px;
+	display: inline;
+}
+
+#containerPercentage {
+	margin-bottom: 10px;
+	width: 50px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+.sizes {
+	margin-bottom: 10px;
+}
+
+#rugWidth {
+	width: 110px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#rugLength {
+	width: 120px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+.addbutton {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: solid 1px;
+	background-color: white;
+	font-family: Kanit, Tahoma;
+}
+
+.addbutton:hover {
+	background-color: black;
+	color: white;
+	transition: 0.2s;
+}
+
+.addbutton:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.downloadbutton {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: solid 1px;
+	background-color: green;
+	font-family: Kanit, Tahoma;
+}
+
+.downloadbutton:hover {
+	background-color: white;
+	color: green;
+	transition: 0.2s;
+}
+
+.downloadbutton:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+
+/*
+
+@media (min-width: 1500px) {
+	.tab {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+
+*/
+
+@media (max-width: 1400px) {
+	.tab {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 10px;
+		row-gap: 10px;
+	}
+}
+
+
+@media (max-width: 700px) {
+	.tab {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin-bottom: 10px;
+		row-gap: 10px;
+	}
+}
+
+/*
+.actualvideo {
+	width: 100%;
+}
+
+.video-container {
+	border: solid 1px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.videotext {
+	background-color: white;
+	width: 100%;
+	text-align: center;
+}
+*/

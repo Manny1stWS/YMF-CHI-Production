@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Machine Setup</title>
+	<link rel="stylesheet" href="Styles/header.css">
+	<link rel="stylesheet" href="Styles/general.css">
+	<link rel="stylesheet" href="Styles/toprow.css">
+	<link rel="stylesheet" href="Styles/bottomrows.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="banner">
+			<div class="logo">
+				<a href="http://www.creativehomeideas.com/" target="_blank">
+					<img class="chilogo" src="Images/creativehomeideas.png">
+				</a>
+			</div>
+			<div class="navigation">
+				<div class="home">
+					<a href="../../index.html">
+						Home
+					</a>
+				</div>
+				<div class="content">
+					<a href="../../Content.html">
+						Content						
+					</a>
+				</div>
+				<div class="about">
+					<a href="../../about.html">
+						About
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="heading">
+			<p class="title">
+				SIMPLE MACHINE SETUP CALCULATION
+			</p>
+			<p class="prepared">
+				Prepared by Manuel Herrera
+			</p>
+			<p class="updated">
+				Updated: 3/26/24
+			</p>
+		</div>	
+	</div>	
+
+	<div class="container">
+		<div class="tab">
+
+			<p>
+				Rug Types:
+				<select id="rugType">
+
+					<option value="Solid">
+						Solid
+					</option>
+
+					<option value="Tonal">
+						Tonal
+					</option>
+
+					<option value="verticalStripe">
+						Veritcal Stripe
+					</option>
+
+					<option value="horizontalStripe">
+						Horizontal Stripe
+					</option>
+					
+				</select>
+			</p>
+
+			<p>
+				Yarn Types:
+				<select id="yarnType">
+
+					<option value="BCF" >
+						BCF
+					</option>
+
+					<option value="N2HS">
+						N2HS
+					</option>
+
+					<option value="Heatset">
+						Heatset
+					</option>
+
+					<option value="Frieze">
+						Frieze
+					</option>
+
+					<option value="mpZ10">
+						MP Z10
+					</option>
+
+					<option value="sdMP">
+						SD MP
+					</option>
+
+					<option value="m6">
+						M6
+					</option>
+
+				</select>
+			</p>
+
+			<p>
+				GSM:
+				<select id="gSm">
+
+					<option value="500">
+						500
+					</option>
+
+					<option value="600">
+						600
+					</option>
+
+					<option value="650">
+						650
+					</option>
+
+					<option value="700">
+						700
+					</option>
+
+					<option value="800">
+						800
+					</option>
+
+					<option value="900">
+						900
+					</option>
+
+					<option value="1200">
+						1200
+					</option>
+
+				</select>
+			</p>
+
+			<p>
+				Backing Type:
+				<select id="backType">
+
+					<option value="Latex">
+						Latex
+					</option>
+
+					<option value="TPR">
+						TPR
+					</option>
+
+				</select>
+			</p>
+
+			<p>
+				Back Weight:
+				<select id="backWeight">
+
+					<option value="670">
+						670
+					</option>
+
+					<option value="700">
+						700
+					</option>
+
+				</select>
+			</p>		
+
+			<p>
+				Pack Types:
+				<select id="packType">
+
+					<option value="ppBag">
+						ppBag
+					</option>
+
+				</select>
+			</p>
+
+		</div>
+
+		<div class="sizes">
+
+			<p>
+				Rug's Size:
+				<input type="number" placeholder="Rug's cm Width" id="rugWidth">
+				<input type="number" placeholder="Rug's cm Length" id="rugLength">
+			</p>
+
+		</div>
+
+		<div class="packed">
+
+			<p>
+				Case Pack:
+				<input type="number" id="casePack">
+			</p>
+			
+		</div>
+
+		<div class="percentages">
+
+			<p>
+				Container%:
+				<input type="number" placeholder="0 to 1" id="containerPercentage">
+			</p>
+			
+		</div>
+
+		<div class="button">
+			
+			<button class="addbutton" onclick="addHtmlTableRow();">ADD</button>
+
+		</div>
+
+		<div class="tab-1">
+			<table border="1" id="tblData">
+				<tr>
+					<th>Rug Type</th>
+					<th>Yarn Type</th>
+					<th>Pack Type</th>
+					<th>Pile GSM</th>
+					<th>Back Type</th>
+					<th>Back GSM</th>
+					<th>Rug's cm Width</th>
+					<th>Rug's cm Length</th>
+					<th>Rug's per Setup</th>
+					<th>Rug's Square Meter</th>
+					<th>Min Pcs per Setup</th>
+					<th>Min Pcs per Rug</th>
+					<th>Min SQM per Setup</th>
+					<th>MOQ Container Count</th>
+					<th>Case Pack</th>
+					<th>Pcs to Fill Container</th>
+					<th>Container %</th>
+					<th>Pcs in Container</th>
+					<th>Sqm in Container</th>
+					<th>Machine's Width Unused</th>
+					<th>Total SQM Unused</th>
+				</tr>
+				<tbody id="table" id="table1" id="table2" id="table3" id="table4" id="table5" id="table6" id="table7">
+					
+				</tbody>
+
+				<tfoot>
+					<tr>
+						<td>Total</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td id="val1"></td>
+						<td id="val2"></td>
+						<td></td>
+						<td id="val3"></td>
+						<td id="val4"></td>
+						<td id="val5"></td>
+						<td id="val6"></td>
+						<td></td>
+						<td id="val7"></td>
+					</tr>
+				</tfoot>
+
+			</table>
+		</div>
+
+		<div class="download">
+			
+			<button class="downloadbutton" onclick="exportTableToExcel('tblData', 'Setups');">DOWNLOAD</button>
+
+		</div>
+
+	</div>
+
+	<script src="JavaScript5.js"></script>
+
+	<script>
+		
+		const machineWidth = 400;
+		const sqmcmTosqmmeter = 10000;
+		const minSqm = 2000;
+		const BCF500 = 7300;
+		const BCF600 = 7000;
+		const N2HS500 = 7800;
+		const N2HS600 = 7800;
+		const N2HS700 = 7000;
+		const N2HS800 = 6200;
+		const HS650 = 7200;
+		const HS700 = 7200;
+		const HS800 = 6400;
+		const FZ700 = 7400;
+		const MPZ10700 = 6300;
+		const MPZ10800 = 5500;
+		const SDMP900 = 4488;
+		const M61200 = 6400;
+
+	</script>
+
+	<script>
+		function exportTableToExcel(tableID, filename = '') {
+			var downloadLink;
+			var dataType = 'application/vnd.ms-excel';
+			var tableSelect = document.getElementById(tableID);
+			var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+			filename = filename?filename+'.xls':'excel_data.xls';
+
+			downloadLink = document.createElement("a");
+
+			document.body.appendChild(downloadLink);
+
+			if(navigator.msSaveOrOpenBlob) {
+				var blop = new Blob(['\ufeff', tableHTML], {
+						type: dataType
+				});
+				navigator.msSaveOrOpenBlop(blob, filename);
+			} else {
+				downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+				downloadLink.download = filename;
+				downloadLink.click();
+			}
+
+		}
+
+	</script>
+
+</body>
+
+</html>

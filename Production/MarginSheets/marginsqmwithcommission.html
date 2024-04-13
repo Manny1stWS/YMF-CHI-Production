@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Margin Sheet</title>
+	<link rel="stylesheet" href="Styles/header.css">
+	<link rel="stylesheet" href="Styles/general.css">
+	<link rel="stylesheet" href="Styles/toprow.css">
+	<link rel="stylesheet" href="Styles/bottomrows.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="banner">
+			<div class="logo">
+				<a href="http://www.creativehomeideas.com/" target="_blank">
+					<img class="chilogo" src="Images/creativehomeideas.png">
+				</a>
+			</div>
+			<div class="navigation">
+				<div class="home">
+					<a href="../../index.html">
+						Home
+					</a>
+				</div>
+				<div class="content">
+					<a href="../../Content.html">
+						Content						
+					</a>
+				</div>
+				<div class="about">
+					<a href="../../about.html">
+						About
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="heading">
+			<p class="title">
+				MARGIN SHEET BY SQM - WITH BUY COMMISSION
+			</p>
+			<p class="prepared">
+				Prepared by Manuel Herrera
+			</p>
+			<p class="updated">
+				Updated: 4/7/24
+			</p>
+		</div>	
+	</div>	
+
+	<div class="container">
+		<div class="tab">
+
+			<p>
+				Customer:
+				<select id="customer">
+
+					<option value="Bealls">
+						Bealls
+					</option>
+
+					<option value="BigLots">
+						Big Lots
+					</option>
+
+					<option value="Burlington">
+						Burlington
+					</option>
+
+					<option value="CitiTrends">
+						Citi Trends
+					</option>
+
+					<option value="Costco">
+						Costco
+					</option>
+
+					<option value="DDs">
+						DDs
+					</option>
+
+					<option value="DollarTree">
+						Dollar Tree
+					</option>
+
+					<option value="FamilyDollar">
+						Family Dollar
+					</option>
+
+					<option value="Gabes">
+						Gabes
+					</option>
+
+					<option value="HomeGoods">
+						Home Goods
+					</option>
+					
+					<option value="MacysBackstage">
+						Macys Backstage
+					</option>
+
+					<option value="OldTimePottery">
+						Old Time Pottery
+					</option>
+
+					<option value="PepeGangas">
+						Pepe Gangas
+					</option>
+
+					<option value="PriceSmart">
+						Price Smart
+					</option>
+
+					<option value="Ross">
+						Ross
+					</option>
+
+					<option value="TheHomeStore">
+						The Home Store
+					</option>
+
+					<option value="TJX">
+						TJX
+					</option>
+
+					<option value="Variety">
+						Variety
+					</option>
+
+					<option value="YMF">
+						YMF
+					</option>
+					
+				</select>
+			</p>
+
+			<p>
+				PO Type:
+				<select id="poType">
+
+					<option value="STOCK" >
+						STOCK
+					</option>
+
+					<option value="POE">
+						POE
+					</option>
+
+					<option value="MDDP">
+						MDDP
+					</option>
+
+					<option value="DI">
+						DI
+					</option>
+
+				</select>
+			</p>
+
+			<p>
+				Brand:
+				<select id="brand">
+
+					<option value="Brookstone">
+						Brookstone
+					</option>
+
+					<option value="EddieBauer">
+						Eddie Bauer
+					</option>
+
+					<option value="FrenchConnection">
+						French Connection
+					</option>
+
+					<option value="JessicaSimpson">
+						Jessica Simpson
+					</option>
+
+					<option value="Juicy">
+						Juicy
+					</option>
+
+					<option value="LauraAshley">
+						Laura Ashley
+					</option>
+
+					<option value="LuckyBrand">
+						Lucky Brand
+					</option>
+
+					<option value="Nautica">
+						Nautica
+					</option>
+
+					<option value="YMF">
+						YMF
+					</option>
+
+					<option value="Customer">
+						Customer
+					</option>
+
+				</select>
+			</p>
+
+			<p>
+				Buy Commission:
+				<select id="buyCommission">
+
+					<option value="YES">
+						YES
+					</option>
+
+				</select>
+			</p>
+
+			<p>
+				Ports:
+				<select id="ports">
+
+					<option value="CN-NINGBO-LONGBEACH">
+						NINGBO-LONG BEACH
+					</option>
+
+					<option value="CN-NINGBO-LOSANGELES">
+						NINGBO-LOS ANGELES
+					</option>
+
+					<option value="CN-NINGBO-NY">
+						NINGBO-NY
+					</option>
+
+					<option value="CN-NINGBO-SANJUAN">
+						NINGBO-SAN JUAN
+					</option>
+
+					<option value="CN-NINGBO-SAVANNAH">
+						NINGBO-SAVANNAH
+					</option>
+
+					<option value="CN-QINGDAO-LONGBEACH">
+						QINGDAO-LONG BEACH
+					</option>
+
+					<option value="CN-QINGDAO-LOSANGELES">
+						QINGDAO-LONG ANGELES
+					</option>
+
+					<option value="CN-QINGDAO-NY">
+						QINGDAO-NY
+					</option>
+
+					<option value="CN-QINGDAO-SANJUAN">
+						QINGDAO-SAN JUAN
+					</option>
+
+					<option value="CN-QINGDAO-SHANGHAI">
+						QINGDAO-SHANGHAI
+					</option>
+
+					<option value="CN-SHANGHAI-LONGBEACH">
+						SHANGHAI-LONG BEACH
+					</option>
+
+					<option value="CN-SHANGHAI-LOSANGELES">
+						SHANGHAI-LOS ANGELES
+					</option>
+
+					<option value="CN-SHANGHAI-NY">
+						SHANGHAI-NY
+					</option>
+
+					<option value="CN-SHANGHAI-SANJUAN">
+						SHANGHAI-SAN JUAN
+					</option>
+
+					<option value="CN">
+						QINGDAO-LONG BEACH
+					</option>
+
+					<option value="CN-SHANGHAI-SAVANNAH">
+						SHANGHAI-SAVANNAH
+					</option>
+
+					<option value="CN-TIANJIN-LONG BEACH">
+						TIANJIN-LONG BEACH
+					</option>
+
+					<option value="CN-TIANJIN-LOSANGELES">
+						TIANJIN-LOS ANGELES
+					</option>
+
+					<option value="CN-TIANJIN-NY">
+						TIANJIN-NY
+					</option>
+
+					<option value="CN-XINGANG-LONGBEACH">
+						XINGANG-LONG BEACH
+					</option>
+
+					<option value="CN-XINGANG-LOSANGELES">
+						XINGANG-LOS ANGELES
+					</option>
+
+					<option value="CN-XINGANG-NY">
+						XINGANG-NY
+					</option>
+
+					<option value="CN-XINGANG-SANJUAN">
+						XINGANG-SAN JUAN
+					</option>
+
+					<option value="CN-YANTIAN-LOSANGELES">
+						YANTIAN-LOS ANGELES
+					</option>
+
+					<option value="CN-YANTIAN-NY">
+						YANTIAN-NY
+					</option>
+
+					<option value="EG-DAMIETTA-NY">
+						DAMIETTA-NY
+					</option>
+
+					<option value="EG-DAMIETTA-SAVANNAH">
+						DAMIETTA-SAVANNAH
+					</option>
+
+					<option value="EG-ELDEKHEILA-SAVANNAH">
+						EL DEKHEILA-SAVANNAH
+					</option>
+
+					<option value="IN-COCHIN-NY">
+						COCHIN-NY
+					</option>
+
+					<option value="IN-COCHIN-SANJUAN">
+						COCHIN-SAN JUAN
+					</option>
+
+					<option value="IN-MUNDRA-CHARLESTON">
+						MUNDRA-CHARLESTON
+					</option>
+
+					<option value="IN-MUNDRA-NY">
+						MUNDRA-NY
+					</option>
+
+					<option value="IN-MUNDRA-SAVANNAH">
+						MUNDRA-SAVANNAH
+					</option>
+
+					<option value="IN-NHAVASHEVA-CHARLESTON">
+						NHAVA SHEVA-CHARLESTON
+					</option>
+
+					<option value="IN-NHAVASHEVA-NY">
+						NHAVA SHEVA-NY
+					</option>
+
+					<option value="IN-NHAVASHEVA-SANJUAN">
+						NHAVA SHEVA-SAN JUAN
+					</option>
+
+					<option value="PK-KARACHI-NY">
+						KARACHI-NY
+					</option>
+
+					<option value="PK-QASIM-NY">
+						QASIM-NY
+					</option>
+
+					<option value="TR-ALIAGA-NY">
+						ALIAGA-NY
+					</option>
+
+					<option value="TR-ALIAGA-SAVANNAH">
+						ALIAGA-SAVANNAH
+					</option>
+
+					<option value="TR-ISKENDERUN-NY">
+						ISKENDERUN-NY
+					</option>
+
+					<option value="TR-ISKENDERUN-SAVANNAH">
+						ISKENDERUN-SAVANNAH
+					</option>
+
+					<option value="TR-ISTANBUL-SAVANNAH">
+						ISTANBUL-SAVANNAH
+					</option>
+
+					<option value="TR-MERSIN-NY">
+						MERSIN-NY
+					</option>
+
+					<option value="TR-MERSIN-SAVANNAH">
+						MERSIN-SAVANNAH
+					</option>
+
+				</select>
+			</p>
+
+		</div>
+
+		<div class="poNumber">
+
+			<p>
+				PO No.:
+				<input type="number" placeholder="PO#" id="poNo">
+			</p>
+
+		</div>
+
+		<div class="description">
+
+			<p>
+				Style Description:
+				<input type="text" placeholder="Description"id="styleDescription">
+			</p>
+			
+		</div>
+
+		<div class="containerSku">
+
+			<p>
+				SQM per Container:
+				<input type="number" placeholder="Total SQM" id="containerSqm">
+			</p>
+			
+			<p>
+				SQM per Sku:
+				<input type="number" placeholder="SQM" id="skuSqm">
+			</p>
+
+		</div>
+
+		<div class="priceDuty">
+
+			<p>
+				SQM Price:
+				<input type="number" placeholder="SQM Price" id="pricePerSqm">
+			</p>
+			
+			<p>
+				Duty%:
+				<input type="number" placeholder="Duty%" id="dutyPercent">
+			</p>
+
+		</div>
+
+		<div class="freightSellPrice">
+
+			<p>
+				Freight:
+				<input type="number" placeholder="Ocean Freight" id="oceanFreight">
+			</p>
+			
+			<p>
+				Sell Price:
+				<input type="number" placeholder="Sell Price" id="sellPrice">
+			</p>
+
+		</div>
+
+		<div class="button">
+			
+			<button class="addbutton" onclick="addHtmlTableRow();">ADD</button>
+
+		</div>
+
+		<div class="tab-1">
+			<table border="1" id="tblData">
+				<tr>
+					<th>CUSTOMER</th>
+					<th>PO TYPE</th>
+					<th>BRAND</th>
+					<th>BUY COMM.</th>
+					<th>PORTS</th>
+					<th>PO NO.</th>
+					<th>STYLE DESCRIPTION</th>
+					<th>SQM PER CONT.</th>
+					<th>SQM OF SKU</th>
+					<th>SQM PRICE</th>
+					<th>DUTY%</th>
+					<th>FREIGHT</th>
+					<th>LDP</th>
+					<th>SELL PRICE</th>
+					<th>MARGIN%</th>
+				</tr>
+				<tbody id="table" id="table1" id="table2" id="table3" id="table4" id="table5" id="table6" id="table7">
+					
+				</tbody>
+
+			</table>
+		</div>
+
+		<div class="download">
+			
+			<button class="downloadbutton" onclick="exportTableToExcel('tblData', 'Margin With Buy Commission');">DOWNLOAD</button>
+
+		</div>
+
+	</div>
+
+	<script src="JavaScript7.js"></script>
+
+	<script>
+		
+
+	</script>
+
+	<script>
+		function exportTableToExcel(tableID, filename = '') {
+			var downloadLink;
+			var dataType = 'application/vnd.ms-excel';
+			var tableSelect = document.getElementById(tableID);
+			var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+			filename = filename?filename+'.xls':'excel_data.xls';
+
+			downloadLink = document.createElement("a");
+
+			document.body.appendChild(downloadLink);
+
+			if(navigator.msSaveOrOpenBlob) {
+				var blop = new Blob(['\ufeff', tableHTML], {
+						type: dataType
+				});
+				navigator.msSaveOrOpenBlop(blob, filename);
+			} else {
+				downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+				downloadLink.download = filename;
+				downloadLink.click();
+			}
+
+		}
+
+	</script>
+
+</body>
+
+</html>

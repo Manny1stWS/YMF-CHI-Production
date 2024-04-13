@@ -1,0 +1,215 @@
+.tab {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	font-family: Kanit, Tahoma;
+	row-gap: 2px;
+	column-gap: 2px;
+	margin-bottom: 10px;
+}
+
+.tab-1 {
+	margin-bottom: 10px;
+	font-size: 1.2vw;
+}
+
+#customer {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#poType {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#brand {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#ports {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#trendZone {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#containerSize {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#buyCommission {
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#poNo {
+	border-radius: 4px;
+	border: solid 1px;
+	width: 70px;
+	margin-bottom: 10px;
+}
+
+#styleDescription {
+	margin-bottom: 10px;
+	width: 320px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+.containerSku,
+.priceDuty,
+.freightSellPrice,
+.unitCost {
+	display: flex;
+	justify-content: center;
+}
+
+#containerSqm {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 100px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#unitCost {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 100px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#boxLength {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 90px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#boxWidth {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 90px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#boxHeight {
+	margin-bottom: 10px;
+	width: 90px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#pcsBox {
+	margin-bottom: 10px;
+	width: 90px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#skuSqm {
+	width: 80px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#pricePerSqm {
+	width: 80px;
+	border-radius: 4px;
+	border: solid 1px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#dutyPercent {
+	width: 80px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+#oceanFreight {
+	width: 100px;
+	border-radius: 4px;
+	border: solid 1px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#sellPrice {
+	width: 80px;
+	border-radius: 4px;
+	border: solid 1px;
+}
+
+.addbutton {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: solid 1px;
+	background-color: white;
+	font-family: Kanit, Tahoma;
+}
+
+.addbutton:hover {
+	background-color: black;
+	color: white;
+	transition: 0.2s;
+}
+
+.addbutton:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.downloadbutton {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	border: solid 1px;
+	background-color: green;
+	font-family: Kanit, Tahoma;
+}
+
+.downloadbutton:hover {
+	background-color: white;
+	color: green;
+	transition: 0.2s;
+}
+
+.downloadbutton:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+
+@media (max-width: 1400px) {
+	.tab {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 10px;
+		row-gap: 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	.tab {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin-bottom: 10px;
+		row-gap: 10px;
+	}
+}

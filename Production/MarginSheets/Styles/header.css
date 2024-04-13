@@ -1,0 +1,111 @@
+.header {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 204px;
+	font-family: Kanit, Tahoma;
+	width: 100%;
+	z-index: 100;
+	background-image: url("../Images/CHI.jpg");
+	background-size: cover;
+	background-position: 60% 18%;
+	background-repeat: no-repeat;
+}
+
+.banner {
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	align-items: center;
+	border-bottom: 4px solid;
+	text-transform: uppercase;
+}
+
+.logo {
+	flex: 1;
+}
+
+.chilogo {
+	height: 5vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.chilogo:hover {
+	height: 5.2vw;
+	transition: 0.2s;
+}
+
+.navigation {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	font-size: 2.2vw;
+	font-weight: 600;
+	text-align: center;
+}
+
+.home {
+	flex: 1;
+}
+
+.home a {
+	color: black;
+}
+
+.home a:hover {
+	color: rgb(0 0 120);
+}
+
+.content {
+	flex: 1;
+}
+
+.content a {
+	color: black;
+}
+
+.content a:hover {
+	color: rgb(0 0 120);
+}
+
+.about {
+	flex: 1;
+}
+
+.about a {
+	color: black;
+}
+
+.about a:hover {
+	color: rgb(0 0 120);
+}
+
+.heading {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-bottom: solid 1px;
+	border-color: lightgray;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.prepared {
+	font-size: 1vw;
+	font-style: italic;
+}
+
+.updated {
+	font-size: 1vw;
+}
+
